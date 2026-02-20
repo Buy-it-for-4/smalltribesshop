@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-<header>
-  <img src="logo.png" alt="Site Logo" class="logo">
-  <h1>ARK: Survival Ascended</h1>
-  <p>Small Tribes Tribe Info Site</p>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <title>ARK Small Tribes Tribe Page</title>
+
+  <!-- 파비콘 (선택, 없으면 삭제해도 됨) -->
+  <!-- <link rel="icon" href="favicon.png"> -->
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #0b0b0b;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
       background: #151515;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
       border-bottom: 2px solid #00ffcc;
     }
 
+    /* 로고 설정 */
+    .logo {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 12px;
+    }
+
     section {
       padding: 20px;
+    }
+
+    h2 {
+      color: #00ffcc;
     }
 
     .card {
@@ -26,68 +49,70 @@
       vertical-align: top;
     }
 
-    h2 {
-      color: #00ffcc;
-    }
-
     footer {
       text-align: center;
       padding: 15px;
       color: #777;
       font-size: 12px;
     }
+
+    /* 모바일 대응 */
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 160px;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
   </style>
-  .logo {
-  max-width: 220px;   /* 로고 최대 크기 */
-  width: 100%;
-  height: auto;       /* 비율 유지 (안 깨짐) */
-  margin-bottom: 12px;
-}
 </head>
 <body>
 
-<header>
-  <h1>ARK: Survival Ascended</h1>
-  <p>공식 Small Tribes 부족 관리 페이지</p>
-</header>
+  <header>
+    <img src="logo.png" alt="Tribe Logo" class="logo">
+    <h1>ARK: Survival Ascended</h1>
+    <p>Small Tribes Tribe Info Site</p>
+    <p style="font-size:12px; color:#aaa;">
+      ※ This site is for tribe reference only.
+    </p>
+  </header>
 
-<section>
-  <h2>📦 아이템 기준</h2>
+  <section>
+    <h2>📦 아이템 기준</h2>
 
-  <div class="card">
-    <h3>금속 주괴</h3>
-    <p>기본 요청량: 200</p>
-    <p>우선순위: 방어 → 제작</p>
-  </div>
+    <div class="card">
+      <h3>금속 주괴</h3>
+      <p>기본 요청량: 200</p>
+      <p>우선순위: 방어 → 제작</p>
+    </div>
 
-  <div class="card">
-    <h3>폴리머</h3>
-    <p>기본 요청량: 100</p>
-    <p>사용 시 관리자 승인</p>
-  </div>
+    <div class="card">
+      <h3>폴리머</h3>
+      <p>기본 요청량: 100</p>
+      <p>사용 시 관리자 승인</p>
+    </div>
 
-  <div class="card">
-    <h3>총기 탄약</h3>
-    <p>개인 사용 제한</p>
-    <p>PVP 시 우선 지급</p>
-  </div>
-</section>
+    <div class="card">
+      <h3>총기 탄약</h3>
+      <p>개인 사용 제한</p>
+      <p>PVP 시 우선 지급</p>
+    </div>
+  </section>
 
-<section>
-  <h2>📜 규칙</h2>
-  <ul>
-    <li>본 페이지는 부족 내부 참고용입니다.</li>
-    <li>아이템 판매 및 현금 거래는 없습니다.</li>
-    <li>무단 사용 시 제재 대상입니다.</li>
-  </ul>
-</section>
+  <section>
+    <h2>📜 규칙</h2>
+    <ul>
+      <li>본 페이지는 부족 내부 참고용입니다.</li>
+      <li>아이템 판매 및 현금 거래는 없습니다.</li>
+      <li>무단 사용 시 제재 대상입니다.</li>
+    </ul>
+  </section>
 
-<footer>
-  © 2026 Small Tribes Tribe Page
-</footer>
+  <footer>
+    © 2026 Small Tribes Tribe Page
+  </footer>
 
 </body>
-
 </html>
-
-
